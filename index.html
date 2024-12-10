@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Welcome this is Jitu</h1>
+    <h1>Welcome to this poorly built website, it is built to ensure that it doesn't distract you from the important details in my profile.</h1>
     <p>I am a student of Quantitative Data Science at Uni Tubingen.</p>
     </header>
 
@@ -51,8 +51,19 @@
       </section>
     </main>
 
-    <footer>
-      <p>&copy; 2024 Jitu. All Rights Reserved.</p>
-    </footer>
+      <footer>
+        <p>&copy; 2024 Jitu. All Rights Reserved.</p>
+      </footer>
+      <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
   </body>
 </html>
