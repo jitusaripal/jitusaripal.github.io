@@ -164,14 +164,16 @@ a[href^="#"] {
 
 #feynmanQuote {
   position: fixed; /* Fix the position relative to the viewport */
-  top: 20px; /* Distance from the top */
-  right: 20px; /* Distance from the right */
-  width: 150px; /* Set smaller width */
+  top: 50px; /* Distance from the top */
+  right: 30px; /* Distance from the right */
+  width: 180px; /* Set smaller width */
   height: auto; /* Maintain aspect ratio */
-  z-index: 100; /* Ensure it stays on top of other elements */
+  z-index: 1000; /* Ensure it stays on top of other elements */
   border-radius: 8px; /* Optional: Add rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Optional: Add a shadow */
   transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth hover effects */
+  background-color: white; /* Optional: Add a white background to make it stand out */
+  padding: 10px; /* Optional: Adds space inside the container */
 }
 
 #feynmanQuote:hover {
