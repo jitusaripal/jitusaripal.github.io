@@ -16,6 +16,7 @@ for (let i = 0; i < 200; i++) {
 }
 
 function animate() {
+  ctx.fillStyle = 'blue'; 
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   stars.forEach(star => {
