@@ -10,7 +10,7 @@ body {
   font-family: 'Poppins', Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
-  padding-top: 75px; /* Add padding to account for the nav bar height */
+  padding-top: 175px; /* Add padding to account for the nav bar height */
   background: linear-gradient(135deg, #1e3c72, #2a5298);
   background-size: 200% 200%;
   animation: gradientBG 10s ease infinite;
@@ -21,7 +21,7 @@ body {
 /* Cool header with overlay effect */
 header {
   text-align: center;
-  padding: 60px 20px;
+  padding: 160px 120px;
   background: rgba(0, 0, 0, 0.85);
   border-bottom: 2px solid #2a5298;
   position: relative;
