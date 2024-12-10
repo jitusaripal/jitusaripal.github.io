@@ -152,3 +152,13 @@ a[href^="#"] {
     font-size: 1.5em;
   }
 }
+
+/* Styling for the visualization canvas */
+#visualizationCanvas {
+  width: 100%;
+  height: 300px; /* Adjust height as needed */
+  display: block;
+  position: relative; /* Ensures it fits within the flow */
+  margin: 0;
+}
+
