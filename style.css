@@ -164,9 +164,9 @@ a[href^="#"] {
 
 #feynmanQuote {
   position: fixed; /* Fix the position relative to the viewport */
-  top: 50px; /* Distance from the top */
+  top: 100px; /* Distance from the top */
   right: 30px; /* Distance from the right */
-  width: 180px; /* Set smaller width */
+  width: 300px; /* Set smaller width */
   height: auto; /* Maintain aspect ratio */
   z-index: 1000; /* Ensure it stays on top of other elements */
   border-radius: 8px; /* Optional: Add rounded corners */
