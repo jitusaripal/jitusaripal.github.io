@@ -6,92 +6,120 @@ body, h1, h2, p, ul, li, a {
 }
 
 body {
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Poppins', Arial, sans-serif; /* Sleeker font */
   line-height: 1.6;
   margin: 0;
-  background: linear-gradient(135deg, #2b5876, #4e4376);
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
-  color: #f4f4f9;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  background-size: 200% 200%;
+  animation: gradientBG 10s ease infinite;
+  color: #f9f9f9;
+  scroll-behavior: smooth; /* Smooth scrolling for anchor links */
 }
 
+/* Cool header with overlay effect */
 header {
   text-align: center;
-  padding: 50px 20px;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-bottom: 2px solid #4e4376;
+  padding: 60px 20px;
+  background: rgba(0, 0, 0, 0.85);
+  border-bottom: 2px solid #2a5298;
+  position: relative;
+  z-index: 1;
 }
 
 header h1 {
-  font-size: 2.5em;
+  font-size: 3em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #ffcc00, #ff9900);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 header p {
-  font-size: 1.2em;
-  color: #ddd;
+  font-size: 1.5em;
+  color: #ccc;
 }
 
+/* Navigation with sleek hover animations */
 nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  padding: 10px 0;
-  z-index: 10;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 15px 0;
+  z-index: 100;
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  transition: all 0.3s ease;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-}
-
-nav ul li {
-  margin: 0 15px;
+  gap: 20px;
 }
 
 nav ul li a {
   text-decoration: none;
   color: white;
   font-size: 18px;
-  font-weight: bold;
-  transition: color 0.3s ease;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 nav ul li a:hover {
   color: #ffcc00;
+  transform: scale(1.1); /* Subtle zoom effect */
 }
 
+/* Main Content Styling */
 main {
-  padding: 100px 20px 50px;
+  padding: 120px 20px 50px; /* Extra padding to clear fixed nav */
 }
 
+/* Modern Section Design */
 section {
-  margin-bottom: 40px;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
 }
 
 section h2 {
-  margin-bottom: 10px;
-  font-size: 1.8em;
+  margin-bottom: 20px;
+  font-size: 2em;
   text-align: center;
+  color: #ffcc00;
+  text-transform: uppercase;
 }
 
 section p, section ul {
   font-size: 1.2em;
   text-align: center;
+  color: #ddd;
 }
 
+/* Footer with Dynamic Gradient */
 footer {
   text-align: center;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  background: linear-gradient(45deg, #1e3c72, #2a5298);
   color: white;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
+/* Animation for Gradient Background */
 @keyframes gradientBG {
   0% {
     background-position: 0% 50%;
@@ -101,5 +129,26 @@ footer {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+/* Smooth Scroll Anchor Link Animation */
+a[href^="#"] {
+  scroll-behavior: smooth;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  header h1 {
+    font-size: 2.5em;
+  }
+
+  section h2 {
+    font-size: 1.5em;
   }
 }
