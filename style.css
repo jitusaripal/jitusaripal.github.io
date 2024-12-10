@@ -163,7 +163,7 @@ a[href^="#"] {
 }
 
 #feynmanQuote {
-  position: fixed; /* Fix the position relative to the viewport */
+  position: absolute; /* Fix the position relative to the viewport */
   top: 100px; /* Distance from the top */
   right: 30px; /* Distance from the right */
   width: 300px; /* Set smaller width */
