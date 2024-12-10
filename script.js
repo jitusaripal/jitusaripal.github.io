@@ -36,7 +36,6 @@ function drawGaussian(gaussian) {
 }
 
 function animate() {
-  ctx.fillStyle = 'blue';
   ctx.fillRect(0, 0, canvas.width, canvas.height); // Clear and fill background
 
   gaussians.forEach(gaussian => {
