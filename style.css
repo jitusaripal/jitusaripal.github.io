@@ -162,3 +162,26 @@ a[href^="#"] {
   margin: 0;
 }
 
+#feynmanQuote {
+  position: absolute; /* Position relative to the page */
+  top: 20px; /* Distance from the top */
+  right: 20px; /* Distance from the right */
+  width: 200px; /* Adjust width to fit the design */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 100; /* Ensure it's above other elements */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth hover effects */
+}
+
+#feynmanQuote:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  opacity: 0.9; /* Slight fade effect */
+}
+
+@media (max-width: 768px) {
+  #feynmanQuote {
+    width: 150px; /* Reduce size for smaller screens */
+  }
+}
+
