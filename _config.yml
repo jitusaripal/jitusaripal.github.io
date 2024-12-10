@@ -1,2 +1,17 @@
-theme: dinky
-title: Not a Web Developer, so ignore the Poor website build and focus on the details :)
+remote_theme: jitusaripal/hydejack@master
+
+# Site Information
+title: My Portfolio
+description: A modern and minimal website using Hydejack.
+url: https://github.com/jitusaripal/jitusaripal.github.io
+baseurl: "" # Leave blank for root site
+
+# Author Information
+author:
+  name: Your Name
+  email: your.email@example.com
+  links:
+    - title: GitHub
+      url: https://github.com/your-username
+    - title: LinkedIn
+      url: https://linkedin.com/in/your-profile
