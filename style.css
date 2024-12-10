@@ -50,16 +50,12 @@ footer {
   color: white;
 }
 
-body {
-  margin: 0;
-  overflow: hidden; /* Prevents scrollbars */
-}
-
+/* Canvas Styles */
 canvas {
-  position: absolute;
+  position: fixed; /* Fixes canvas to the viewport */
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
+  z-index: -1; /* Keeps canvas behind content */
 }
-
