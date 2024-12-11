@@ -1,50 +1,28 @@
-/* General Reset */
-body, h1, h2, p, ul, li, a {
+/* Global Reset and Box-Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-/* Ensure the nav bar doesn't overlap content */
+/* Body Styling */
 body {
   font-family: 'Poppins', Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
-  padding: 80px; /* Ensure the semicolon is present here */
-  background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradient background */
+  padding: 20px; /* Reduced for better mobile readability */
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
   background-size: 200% 200%;
   animation: gradientBG 10s ease infinite;
   color: #f9f9f9;
   scroll-behavior: smooth;
 }
 
-/* Adjust Header */
-header {
-  margin-top: 120px; /* Add some space after the nav bar */
-  text-align: center;
-  padding: 80px 20px; /* Adjust padding */
-  background: rgba(0, 0, 0, 0.85);
-  border-bottom: 2px solid #2a5298;
-  position: relative;
-  z-index: 1;
+@media (min-width: 769px) {
+  body {
+    padding: 80px;
+  }
 }
-
-
-header h1 {
-  font-size: 3em;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  background: linear-gradient(to right, #ffcc00, #ff9900);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-header p {
-  font-size: 1.5em;
-  color: #ccc;
-}
-
-
 
 /* Navigation Bar */
 nav {
@@ -52,7 +30,7 @@ nav {
   top: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.9);
-  padding: 15px 0; /* Height of 75px including padding */
+  padding: 15px 0;
   z-index: 1000;
   backdrop-filter: blur(10px);
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
@@ -77,16 +55,41 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #ffcc00;
-  transform: scale(1.1); /* Subtle zoom effect */
+  transform: scale(1.1);
+}
+
+/* Header */
+header {
+  margin-top: 120px;
+  text-align: center;
+  padding: 80px 20px;
+  background: rgba(0, 0, 0, 0.85);
+  border-bottom: 2px solid #2a5298;
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  font-size: 3em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #ffcc00, #ff9900);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header p {
+  font-size: 1.5em;
+  color: #ccc;
 }
 
 /* Main Content */
 main {
-  margin-top: 175px; /* Move the main content down to avoid overlapping the navbar */
+  margin-top: 175px;
 }
 
-/* Modern Section Design */
 section {
+  scroll-margin-top: 80px; /* Adjust based on navbar height */
   margin-bottom: 50px;
   padding: 30px;
   background: rgba(255, 255, 255, 0.08);
@@ -97,8 +100,8 @@ section {
 }
 
 section:hover {
-  transform: translateY(-5px); /* Slight lift effect */
-  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
 }
 
 section h2 {
@@ -115,7 +118,7 @@ section p, section ul {
   color: #ddd;
 }
 
-/* Footer with Dynamic Gradient */
+/* Footer */
 footer {
   text-align: center;
   padding: 30px;
@@ -126,7 +129,7 @@ footer {
   letter-spacing: 1px;
 }
 
-/* Animation for Gradient Background */
+/* Animation */
 @keyframes gradientBG {
   0% {
     background-position: 0% 50%;
@@ -139,12 +142,12 @@ footer {
   }
 }
 
-/* Smooth Scroll Anchor Link Animation */
+/* Smooth Scroll */
 a[href^="#"] {
   scroll-behavior: smooth;
 }
 
-/* Media Queries for Responsiveness */
+/* Media Queries */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
@@ -158,10 +161,24 @@ a[href^="#"] {
   section h2 {
     font-size: 1.5em;
   }
+
+  main {
+    margin-top: 130px; /* Adjusted to align with new body padding */
+  }
+
+  header {
+    padding: 40px 20px; /* Reduced padding for mobile */
+  }
+
+  section {
+    scroll-margin-top: 70px; /* Adjust if navbar height changes on mobile */
+  }
+
+  #feynmanQuote {
+    width: 150px;
+    padding: 5px;
+  }
 }
-
-/* Styling for the visualization canvas */
-
 
 /* Visualization Canvas */
 #visualizationCanvas {
@@ -173,27 +190,26 @@ a[href^="#"] {
 }
 
 #feynmanQuote {
-  position: fixed; /* Fixed position relative to the viewport */
-  top: 0; /* Lock it to the very top of the viewport */
-  right: 0; /* Lock it to the very right of the viewport */
-  width: 150px; /* Set a reasonable width */
-  height: auto; /* Maintain the aspect ratio */
-  z-index: 1000; /* Ensure it stays above other elements */
-  background-color: white; /* Add a background if needed */
-  border-radius: 8px; /* Optional: Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Add a subtle shadow */
-  padding: 10px; /* Add padding for the content inside */
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: auto;
+  z-index: 1000;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  padding: 10px;
 }
 
 #feynmanQuote:hover {
-  transform: scale(1.1); /* Slight zoom on hover */
-  opacity: 0.85; /* Slight fade effect */
+  transform: scale(1.1);
+  opacity: 0.85;
 }
 
-/* Ensure it is readable and responsive on smaller devices */
 @media (max-width: 768px) {
   #feynmanQuote {
-    width: 150px; /* Reduce size on smaller screens */
-    padding: 5px; /* Adjust padding for smaller screens */
+    width: 150px;
+    padding: 5px;
   }
 }
