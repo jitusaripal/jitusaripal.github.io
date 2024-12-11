@@ -10,14 +10,13 @@ body {
   font-family: 'Poppins', Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
-  padding: 80px;
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  padding: 80px; /* Ensure the semicolon is present here */
+  background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradient background */
   background-size: 200% 200%;
   animation: gradientBG 10s ease infinite;
   color: #f9f9f9;
   scroll-behavior: smooth;
 }
-
 
 /* Adjust Header */
 header {
