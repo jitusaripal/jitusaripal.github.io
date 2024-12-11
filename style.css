@@ -176,7 +176,7 @@ a[href^="#"] {
 
 #feynmanQuote {
   position: fixed; /* Fix the position relative to the viewport */
-  top: 100px; /* Distance from the top */
+  top: calc(175px + 20px); /* 175px accounts for the body padding, 20px adds extra spacing */
   right: 30px; /* Distance from the right */
   width: 300px; /* Set smaller width */
   height: auto; /* Maintain aspect ratio */
