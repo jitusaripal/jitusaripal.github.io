@@ -10,7 +10,7 @@ body {
   font-family: 'Poppins', Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
-  padding-top: 75px; /* Match this value with the nav height */
+  padding-top: 175px; /* Match this value with the nav height */
   background: linear-gradient(135deg, #1e3c72, #2a5298);
   background-size: 200% 200%;
   animation: gradientBG 10s ease infinite;
@@ -21,7 +21,7 @@ body {
 
 /* Adjust Header */
 header {
-  margin-top: 20px; /* Add some space after the nav bar */
+  margin-top: 120px; /* Add some space after the nav bar */
   text-align: center;
   padding: 80px 20px; /* Adjust padding */
   background: rgba(0, 0, 0, 0.85);
@@ -83,8 +83,8 @@ nav ul li a:hover {
 
 /* Main Content */
 main {
-  margin-top: 20px; /* Ensure proper spacing between header and main */
-  padding: 20px; /* Add consistent padding inside main */
+  margin-top: 50px; /* Ensure proper spacing between header and main */
+  padding: 50px; /* Add consistent padding inside main */
 }
 
 /* Modern Section Design */
