@@ -175,17 +175,16 @@ a[href^="#"] {
 }
 
 #feynmanQuote {
-  position: fixed; /* Keeps the picture fixed in the viewport */
-  top: 20px; /* Distance from the top of the viewport */
-  right: 20px; /* Distance from the right of the viewport */
-  width: 250px; /* Default width for the image */
-  height: auto; /* Maintain aspect ratio */
-  z-index: 1000; /* Ensure it appears above other elements */
-  border-radius: 8px; /* Optional: Add rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Optional: Add a shadow */
-  background-color: white; /* Optional: Add a white background to make it stand out */
-  padding: 10px; /* Adds space inside the container */
-  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth hover effects */
+  position: fixed; /* Fixed position relative to the viewport */
+  top: 0; /* Lock it to the very top of the viewport */
+  right: 0; /* Lock it to the very right of the viewport */
+  width: 250px; /* Set a reasonable width */
+  height: auto; /* Maintain the aspect ratio */
+  z-index: 1000; /* Ensure it stays above other elements */
+  background-color: white; /* Add a background if needed */
+  border-radius: 8px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Add a subtle shadow */
+  padding: 10px; /* Add padding for the content inside */
 }
 
 #feynmanQuote:hover {
@@ -193,12 +192,10 @@ a[href^="#"] {
   opacity: 0.85; /* Slight fade effect */
 }
 
-/* Responsiveness for Mobile Screens */
+/* Ensure it is readable and responsive on smaller devices */
 @media (max-width: 768px) {
   #feynmanQuote {
-    width: 150px; /* Smaller width on mobile screens */
-    top: 10px; /* Adjust distance from the top */
-    right: 10px; /* Adjust distance from the right */
-    padding: 5px; /* Reduce padding for better fit */
+    width: 150px; /* Reduce size on smaller screens */
+    padding: 5px; /* Adjust padding for smaller screens */
   }
 }
