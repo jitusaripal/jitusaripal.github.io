@@ -170,7 +170,7 @@ a[href^="#"] {
   width: 100%;
   height: 300px;
   display: block;
-  position: relative;
+  position: fixed;
   margin: 0 auto;
 }
 
