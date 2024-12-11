@@ -10,6 +10,7 @@ body {
   font-family: 'Poppins', Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
+  padding: 80px
   background: linear-gradient(135deg, #1e3c72, #2a5298);
   background-size: 200% 200%;
   animation: gradientBG 10s ease infinite;
