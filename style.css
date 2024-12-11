@@ -176,7 +176,7 @@ a[href^="#"] {
   position: fixed; /* Fixed position relative to the viewport */
   top: 0; /* Lock it to the very top of the viewport */
   right: 0; /* Lock it to the very right of the viewport */
-  width: 250px; /* Set a reasonable width */
+  width: 150px; /* Set a reasonable width */
   height: auto; /* Maintain the aspect ratio */
   z-index: 1000; /* Ensure it stays above other elements */
   background-color: white; /* Add a background if needed */
